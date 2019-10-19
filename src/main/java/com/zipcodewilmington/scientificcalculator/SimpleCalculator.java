@@ -9,21 +9,21 @@ public class SimpleCalculator {
         return a + b;
     }
 
-    /*public static Integer subNum(Integer a, Integer b){
+    public static Double subNum(Double a, Double b){
 
         return a - b;
     }
 
-    //public static Integer multiNum(Integer a, Integer b){
+    public static Double multiNum(Double a, Double b){
 
         return a * b;
     }
 
-    //public static Integer divNum(Integer a, Integer b){
+    public static Double divNum(Double a, Double b){
 
         return a / b;
     }
-*/
+
 
 
 

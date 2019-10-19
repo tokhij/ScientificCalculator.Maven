@@ -8,7 +8,7 @@ public class MainApplication {
 
     public static void main(String[] args) {
 
-            Console.println("Welcome to my calculator!");
+            Console.println("Welcome to my DAMN calculator!");
 
             String s = Console.getStringInput("Enter a string");
             Console.println("The user input %s as a string", s);

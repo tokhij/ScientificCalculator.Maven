@@ -39,22 +39,44 @@ public class SimpleCalculatorTest {
         System.out.println(actual);
     }
 
-/*
-        @Test
-        public void subNumTest() {
-            Double actual = 0.0;
-            SimpleCalculator calc1 = new SimpleCalculator();
-            actual = calc1.subNum(-10.0,-10.0);
-            assertEquals(Double.valueOf(-20), actual);
-        }
 
         @Test
-        public void multiNumTest() {
+        public void subNumTest1() {
+            Double actual = 0.0;
+            SimpleCalculator calc1 = new SimpleCalculator();
+            actual = calc1.subNum(-10.0,10.0);
+            assertEquals(Double.valueOf(-20), actual);
+        }
+        @Test
+        public void subNumTest2(){
+            Double actual = 0.0;
+            SimpleCalculator calc1 = new SimpleCalculator();
+            actual = calc1.subNum(10.0,5.0);
+            assertEquals(Double.valueOf(5), actual);
+        }
+        @Test
+        public void subNameTest3(){
+            Double actual = 0.0;
+            SimpleCalculator calc1 = new SimpleCalculator();
+            actual = calc1.subNum(1.0,1.0);
+            assertEquals(Double.valueOf(0), actual);
+        }
+
+
+        @Test
+        public void multiNumTest1() {
             Double actual = 0.0;
             SimpleCalculator calc1 = new SimpleCalculator();
             actual = calc1.multiNum(-10.0,-10.0);
             assertEquals(Double.valueOf(-20), actual);
         }
-*/
+        @Test
+    public void multiNumTest2(){
+        Double actual = 0.0;
+        SimpleCalculator calc1 = new SimpleCalculator();
+        actual = calc1.multiNum(10.0, 0.0);
+        assertEquals(Double.valueOf(0), actual);
+    }
+
 
 }

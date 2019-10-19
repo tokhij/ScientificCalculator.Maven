@@ -5,11 +5,8 @@ package com.zipcodewilmington.scientificcalculator;
  */
 public class MainApplication {
 
-    String bob = "Name is bob";
-    Integer jeff = 3;
 
     public static void main(String[] args) {
-        public static void main(String[] args) {
 
             Console.println("Welcome to my calculator!");
 
@@ -24,7 +21,7 @@ public class MainApplication {
         }
 
 
-        Console.println(addNum(5, 6).toString());
+        //Console.println(addNum(5, 6).toString());
 
     }
 
@@ -33,4 +30,4 @@ public class MainApplication {
 
 
 
-}
+

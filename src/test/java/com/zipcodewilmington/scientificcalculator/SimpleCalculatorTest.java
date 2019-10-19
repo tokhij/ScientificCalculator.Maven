@@ -92,7 +92,17 @@ public class SimpleCalculatorTest {
         assertEquals(Double.valueOf(1), actual);
     }
     @Test
-    public void divNumTest2(){
+    public void divNumTest2() {
         Double actual = 0.0;
-
+        SimpleCalculator calc1 = new SimpleCalculator();
+        actual = calc1.divNum(10.0,2.0);
+        assertEquals(Double.valueOf(5), actual);
+    }
+    @Test
+    public void divNumTest3(){
+        Double actual = 0.0;
+        SimpleCalculator calc1 = new SimpleCalculator();
+        actual = calc1.divNum(100.0, 4.0);
+        assertEquals(Double.valueOf(25), actual);
+    }
 }

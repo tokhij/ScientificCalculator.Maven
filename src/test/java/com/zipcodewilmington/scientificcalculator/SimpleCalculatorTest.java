@@ -77,6 +77,22 @@ public class SimpleCalculatorTest {
         actual = calc1.multiNum(10.0, 0.0);
         assertEquals(Double.valueOf(0), actual);
     }
-
+    @Test
+    public void multiNumTest3(){
+        Double actual = 0.0;
+        SimpleCalculator calc1 = new SimpleCalculator();
+        actual = calc1.multiNum(5.0, 5.0);
+        assertEquals(Double.valueOf(25), actual);
+    }
+    @Test
+    public void divNumTest1(){
+        Double actual = 0.0;
+        SimpleCalculator calc1 = new SimpleCalculator();
+        actual = calc1.divNum(5.0,5.0);
+        assertEquals(Double.valueOf(1), actual);
+    }
+    @Test
+    public void divNumTest2(){
+        Double actual = 0.0;
 
 }

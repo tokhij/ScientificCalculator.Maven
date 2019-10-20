@@ -21,14 +21,12 @@ public class Console {
         String userInput = scanner.nextLine();
         return userInput;
     }
-
     public static Integer getIntegerInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        int userInputInt = scanner.nextInt();
-        return userInputInt;
+        Integer userInputInteger = scanner.nextInt();
+        return userInputInteger;
     }
-
     public static Double getDoubleInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);

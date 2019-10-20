@@ -10,7 +10,6 @@ public class MainApplication {
 
     public static void main(String[] args) {
         Double result;
-        //boolean checkInput = true;
         SimpleCalculator simpleCalc = new SimpleCalculator();
         Scientific scientificCalc = new Scientific();
         Console.println("Welcome to this Damn calculator!");
@@ -56,6 +55,7 @@ public class MainApplication {
                         System.out.println("Err: Invalid Entry");
                         break;
                 }
+                mode = 0;
 
             }
 
@@ -63,7 +63,7 @@ public class MainApplication {
                 Integer operatorSci = Console.getIntegerInput("Choose your operation: \n" +
                         "1 - Inverse \n" + "2 - Square \n" + "3 - Square root \n" + "4 - Exit to main menu");
 
-                if (operatorSci == 0) {
+                if (operatorSci == 4) {
                     mode = 0;
                     break;
                 }
@@ -83,12 +83,13 @@ public class MainApplication {
                         Console.println("%f", result);
                         break;
                     case 4:
-                        //System.out.println("Err: Invalid Entry");
                         mode = 0;
                         break;
                     default:
+                        //System.out.println("Err: Invalid Entry");
                         break;
                 }
+                mode = 0;
             }
         }
 

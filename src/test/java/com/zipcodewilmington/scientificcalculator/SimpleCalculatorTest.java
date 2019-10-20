@@ -108,9 +108,9 @@ public class SimpleCalculatorTest {
     @Test
     public void divNumTest0() {
         Double actual = 0.0;
-        Double expected = 10.0;
+        Double expected = 0000.0;
         SimpleCalculator calc1 = new SimpleCalculator();
-        actual = calc1.divNum(100.0, 10.0);
+        actual = calc1.divNum(10.0, 0.0);
         assertEquals(expected, actual);
     }
 }

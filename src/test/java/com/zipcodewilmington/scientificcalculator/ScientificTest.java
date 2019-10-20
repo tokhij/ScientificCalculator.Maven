@@ -40,7 +40,7 @@ public class ScientificTest {
         double expected=inverse.findInverse(value1);
         assertEquals(actual,expected,.00);
     }
-    /*@Test
+    @Test
     public void findSwitchSignTest(){
         //it will check the switch sign
         Scientific switchSign=new Scientific();
@@ -49,5 +49,5 @@ public class ScientificTest {
         double expected=switchSign.findSwitchSign(value1);
         assertEquals(actual,expected,.00);
     }
-*/
+
 }

@@ -25,12 +25,14 @@ public class SimpleCalculator {
     }
 
     public static Double divNum(Double a, Double b) {
-        if(b == 0) {
-            System.out.println("Damn, Don't divide by zero");
-        }
-        return a/b;
+
+
+        if (b == 0) {
+            Console.println("Damn, Don't / by zero");
+            return 0000.0;
+        } else {return a / b;}
+
     }
 }
-
 
 

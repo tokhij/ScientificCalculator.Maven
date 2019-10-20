@@ -22,13 +22,13 @@ public class SimpleCalculator {
 
     public static Double divNum(Double a, Double b) {
 
-        if(b == 0) {
-            System.out.println("Damn, Don't / by zero");
-        }
-        return a / b;
+        if (b == 0) {
+            String string = "Damn, Don't / by zero";
+            return string;
+            return a / b;
 
+        }
     }
 }
-
 
 

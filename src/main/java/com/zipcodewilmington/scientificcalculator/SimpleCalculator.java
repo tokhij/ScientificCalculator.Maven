@@ -5,6 +5,10 @@ import java.awt.*;
 public class SimpleCalculator {
 
 
+    public SimpleCalculator() {
+    }
+
+
     public static Double addNum(Double a, Double b) {
 
         return a + b;
@@ -22,12 +26,12 @@ public class SimpleCalculator {
 
     public static Double divNum(Double a, Double b) {
 
-        if (b == 0) {
-            String string = "Damn, Don't / by zero";
-            return string;
-            return a / b;
 
-        }
+        if (b == 0) {
+            Console.println("Damn, Don't / by zero");
+            return 0000.0;
+        } else {return a / b;}
+
     }
 }
 

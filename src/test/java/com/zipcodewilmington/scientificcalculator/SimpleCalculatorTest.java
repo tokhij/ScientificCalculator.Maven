@@ -108,7 +108,7 @@ public class SimpleCalculatorTest {
     @Test
     public void divNumTest0() {
         Double actual = 0.0;
-        String expected = "Damn, Don't / by zero";
+        Double expected = 0000.0;
         SimpleCalculator calc1 = new SimpleCalculator();
         actual = calc1.divNum(10.0, 0.0);
         assertEquals(expected, actual);

@@ -27,12 +27,12 @@ public class Scientific{
         }
         else return null;
     }
-   /* //lets find switch signs
+   //lets find switch signs
     public Double findSwitchSign(double number){
         return number*-1;
     }
     //lets accept mode
-    import java.io.BufferedReader;
+  /*  import java.io.BufferedReader;
     import java.io.InputStreamReader;
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String s = br.readLine();

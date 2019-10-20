@@ -14,16 +14,17 @@ public class MainApplication {
         SimpleCalculator simpleCalc = new SimpleCalculator();
         Scientific scientificCalc = new Scientific();
         Console.println("Welcome to this Damn calculator!");
-        String mode = "0";
+        Integer mode = 0;
 
-        while (mode.equals("0")) {
-            mode = Console.getStringInput("Choose the number mode: \n" + "1 - Simple Calculator \n" + "2 - Scientific Calculator");
+        while (mode == 0) {
+            mode = Console.getIntegerInput("Choose the mode number: \n" + "1 - Simple Calculator \n" + "2 - Scientific Calculator");
 
-            while (mode.equals("1")) {
+            while (mode == 1) {
 
-                Integer operator = Console.getIntegerInput("Choose your operation: (+, -, *, /); \n" + "5 - Exit to Main Menu");
+                Integer operator = Console.getIntegerInput("Choose your operation by number: \n" +
+                        "1 - Addition \n" + "2 - Subtraction \n" + "3 - Multiplication \n" + "4 - Division \n" + "5 - Exit to Main Menu");
                 if (operator == 5) {
-                    mode = "0";
+                    mode = 0;
                     break;
                 }
                 Double value1 = Console.getDoubleInput("Enter the first value.");
@@ -48,18 +49,22 @@ public class MainApplication {
                         result = simpleCalc.divNum(value1, value2);
                         Console.println("%f / %f = %f", value1, value2, result);
                         break;
+                    case 5:
+                        mode = 0;
+                        break;
                     default:
-                    break;
+                        System.out.println("Err: Invalid Entry");
+                        break;
                 }
 
             }
 
-            while (mode.equals("2")) {
+            while (mode == 2) {
                 Integer operatorSci = Console.getIntegerInput("Choose your operation: \n" +
                         "1 - Inverse \n" + "2 - Square \n" + "3 - Square root \n" + "4 - Exit to main menu");
 
                 if (operatorSci == 0) {
-                    mode = "0";
+                    mode = 0;
                     break;
                 }
                 Double value = Console.getDoubleInput("Enter your value.");
@@ -78,7 +83,8 @@ public class MainApplication {
                         Console.println("%f", result);
                         break;
                     case 4:
-                        mode = "0";
+                        //System.out.println("Err: Invalid Entry");
+                        mode = 0;
                         break;
                     default:
                         break;

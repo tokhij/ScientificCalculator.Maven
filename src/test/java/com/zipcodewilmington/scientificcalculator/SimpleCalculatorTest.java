@@ -105,4 +105,12 @@ public class SimpleCalculatorTest {
         actual = calc1.divNum(100.0, 4.0);
         assertEquals(Double.valueOf(25), actual);
     }
+    @Test
+    public void divNumTest0() {
+        Double actual = 0.0;
+        Double expected = 10.0;
+        SimpleCalculator calc1 = new SimpleCalculator();
+        actual = calc1.divNum(100.0, 10.0);
+        assertEquals(expected, actual);
+    }
 }

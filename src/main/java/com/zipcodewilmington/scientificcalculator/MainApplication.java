@@ -7,7 +7,7 @@ package com.zipcodewilmington.scientificcalculator;
  */
 public class MainApplication {
 
-
+String test ="";
     public static void main(String[] args) {
         Double result;
         Double value;

@@ -10,7 +10,6 @@ public class SimpleCalculator {
 
 
     public static Double addNum(Double a, Double b) {
-
         return a + b;
     }
 

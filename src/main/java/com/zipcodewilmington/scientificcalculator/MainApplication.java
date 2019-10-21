@@ -79,8 +79,8 @@ public class MainApplication {
 
             while (mode == 2) {
                 operatorSci = Console.getIntegerInput("Choose operation by number: \n" +
-                        "1 - Inverse \n" + "2 - Square \n" + "3 - Square root \n" + "4 - Exponent"
-                        + "5 - Trigonometric Functions" + "6 - Exit to main menu");
+                        "1 - Inverse \n" + "2 - Square \n" + "3 - Square root \n" + "4 - Power \n"
+                        + "5 - Trigonometric Functions \n" + "6 - Exit to main menu \n");
 
                 switch (operatorSci) {
                     case 1:
@@ -100,70 +100,44 @@ public class MainApplication {
                         break;
                     case 4:
                         value1 = Console.getDoubleInput("Enter the first value.");
-                        value2 = Console.getDoubleInput("Enter the second value.");
-                        result = scientificCalc.EXPFUNCHERE(value1, value2);
+                        value2 = Console.getDoubleInput("Enter the power.");
+                        result = scientificCalc.findPower(value1, value2);
                         Console.println("= %f", result);
                         break;
                     case 5:
                         mode = 3;
                         while (mode == 3) {
                             operatorTrig = Console.getIntegerInput("Choose operation by number: \n" +
-                                    "1 - Sin \n" + "2 - Cosine \n" + "3 - Tangent \n" + "4 - Exit to main menu");
+                                    "1 - Sine \n" + "2 - Cosine \n" + "3 - Tangent \n" + "4 - Exit to Scientific menu");
                             switch (operatorTrig) {
                                 case 1:
-                                    value = Console.getDoubleInput("Enter your value.");
-                                    trigMode = Console.getIntegerInput("Choose mode by number: \n"
-                                            + "1 - Degrees \n"
-                                            + "2 - Radians");
-                                    if (trigMode == 1) {
-                                        result = scientificCalc.SINE DtoR FUNC (value);
-                                        Console.println("= %f radians", result);
-                                    } else if (trigMode == 2) {
-                                        result = scientificCalc.SINEFUNC RtoD(value);
-                                        Console.println("= %f degrees", result);
-                                    } else {
-                                        System.out.println("Err: Invalid Entry");
-                                        mode = 3;
-                                    }
+                                    value = Console.getDoubleInput("Enter your angle in radians.");
+
+                                        result = scientificCalc.findSine(value);
+                                        Console.println("= %f", result);
+
                                     break;
                                 case 2:
-                                    value = Console.getDoubleInput("Enter your value.");
-                                    trigMode = Console.getIntegerInput("Choose mode by number: \n"
-                                            + "1 - Degrees \n"
-                                            + "2 - Radians");
-                                    if (trigMode == 1) {
-                                        result = scientificCalc.COSINE DtoR FUNC (value);
+                                    value = Console.getDoubleInput("Enter your angle in radians.");
+
+                                        result = scientificCalc.findCosine(value);
                                         Console.println("= %f radians", result);
-                                    } else if (trigMode == 2) {
-                                        result = scientificCalc.COSINEFUNC RtoD(value);
-                                        Console.println("= %f degrees", result);
-                                    } else {
-                                        System.out.println("Err: Invalid Entry");
-                                        mode = 3;
-                                    }
+
                                     break;
                                 case 3:
-                                    value = Console.getDoubleInput("Enter your value.");
-                                    trigMode = Console.getIntegerInput("Choose mode by number: \n"
-                                            + "1 - Degrees \n"
-                                            + "2 - Radians");
-                                    if (trigMode == 1) {
-                                        result = scientificCalc.TANGENT DtoR(value);
+                                    value = Console.getDoubleInput("Enter your angle in radians.");
+
+
+                                        result = scientificCalc.findTan(value);
                                         Console.println("= %f radians", result);
-                                    } else if (trigMode == 2) {
-                                        result = scientificCalc.TANGENT RtoD(value);
-                                        Console.println("= %f degrees", result);
-                                    } else {
-                                        System.out.println("Err: Invalid Entry");
-                                        mode = 3;
-                                    }
+
                                     break;
                                 case 4:
-                                    mode = 3;
+                                    mode = 2;
                                     break;
                                 default:
                                     System.out.println("Err: Invalid Entry");
-                                    mode = 2;
+                                    mode = 0;
                                     break;
 
                             }

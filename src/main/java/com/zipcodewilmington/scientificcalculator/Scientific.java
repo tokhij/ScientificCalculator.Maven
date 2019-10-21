@@ -25,14 +25,19 @@ public class Scientific{
     //lets find inverse
 
     public Double findInverse(double number1){
+        Double answer = 0.0;
         if (number1!=0){
-            return 1/number1;
-
+            answer = 1/number1;
         }
         else{
-            System.out.println("wrong input");
-            return 000.0 ;
+            System.out.println("Can't divide by 0");
+            if(number1>0) {
+                answer = Double.POSITIVE_INFINITY ;
+            } else {
+                answer = Double.NEGATIVE_INFINITY;
+            }
         }
+        return answer;
     }
    //lets find switch signs
     public Double findSwitchSign(double number1)

@@ -86,6 +86,7 @@ public class ScientificTest {
         double expected=inverse.findInverse(value1);
         assertEquals(actual,expected,.00);
     }
+
     @Test
     public void findInverseTest2(){
         //it will check the inverse

@@ -7,7 +7,7 @@ package com.zipcodewilmington.scientificcalculator;
  */
 public class MainApplication {
 
-String test ="";
+    //String test ="";
     public static void main(String[] args) {
         Double result;
         Double value;
@@ -17,7 +17,7 @@ String test ="";
         int operatorSci;
         int operatorTrig;
         int mode = 0;
-        int trigMode;
+        //int trigMode;
         SimpleCalculator simpleCalc = new SimpleCalculator();
         Scientific scientificCalc = new Scientific();
 
